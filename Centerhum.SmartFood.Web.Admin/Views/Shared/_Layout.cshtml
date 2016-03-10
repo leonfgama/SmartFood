@@ -1,0 +1,43 @@
+﻿@using System.Configuration
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>SmartFood - Tezzo Maki</title>
+    @{
+        Html.RenderPartial("_Styles");
+    }    
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <input type="hidden" value="@Url.Content("~/Content/plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf")" id="urlSwfGrid"/>
+
+    <header class="header navbar navbar-fixed-top" role="banner" id="headerPage">
+    @{
+        
+        Html.RenderPartial("_Header");
+    }
+    </header>
+	<div id="container">
+        @*@{Html.RenderPartial("_Slidebar");}*@
+		<div id="content">
+			<div class="container">
+				@{
+                    Html.RenderPartial("_BreadcrumbsLine");
+                    Html.RenderPartial("_PageHeader");
+                }				
+
+				<!--=== Page Content ===-->
+				@RenderBody()
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+
+		</div>
+	</div>
+        @{Html.RenderPartial("_Scripts");}
+        @RenderSection("Scripts", false)
+</body>
+</html>

@@ -1,0 +1,175 @@
+﻿@using Centerhum.SmartFood.HtmlObjects.Enum
+@model Centerhum.SmartFood.HtmlObjects.FormInsert
+@if (Model == null)
+{
+    return;
+}
+@{ 
+    string formAjax = Model.IsAjax ? "form-insert-ajax" : "";
+    string validateForm = !Model.CustomValidate ? "validate-me" : "";
+}
+<div id="form-insert" class="row">
+    <div class="col-md-12">
+        <div class="widget box">
+            <div class="widget-header">
+                <h4>
+                    <i class="icon-reorder"></i>@Model.Title</h4>
+            </div>
+            <div class="widget-content">
+                <form id="@Model.FormId" class="form-horizontal row-border @validateForm @formAjax" action="@Url.Action(Model.ActionToPost)">
+                    <div class="form-body">
+
+                        @if (Model.Fields != null || Model.Fields.Count() == 0)
+                        {
+                            foreach (var field in Model.Fields.Where(x => x.Type != Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Hidden).ToList())
+                            {
+                            <div class="form-group">
+                                @{ string requiredClass = ""; }
+                                @if (field.Type != FieldType.Divider)
+                                {
+                                    <label class="control-label col-md-3">
+                                        @field.Label
+
+                                        @if (field.IsRequired)
+                                        {
+                                            requiredClass = "required";
+                                            <span class="required">*</span>
+                                        }
+                                    </label>
+                                }
+                                <div class="col-md-9">
+                                    @switch (field.Type)
+                                    {
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.TextBox:
+                                        <input type="text" class="form-control @requiredClass" name="@field.Name" placeholder="@field.Placeholder" value="@field.Value" />
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Email:
+                                        <input type="text" class="form-control email @requiredClass" name="@field.Name" placeholder="@field.Placeholder" value="@field.Value" />
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Divider:
+                                        <span class="divider-label">@field.Label</span>
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Datepicker:
+                                        <input type="text" class="form-control date-picker @requiredClass" name="@field.Name" placeholder="@field.Placeholder" value="@field.Value" />
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.TextTag:
+                                            string tagsValues = "";
+                                            field.InitialsTags.ForEach(x => tagsValues += (x + ","));
+                                        <input type="text" class="form-control tag @requiredClass" name="@field.Name" placeholder="@field.Placeholder" value="@tagsValues">
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Spinner:
+                                        <input type="text" class="form-control spinner @requiredClass" name="@field.Name" placeholder="@field.Placeholder">
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.AutoComplete:
+                                        <input type="text" class="form-control auto-complete-control @requiredClass" name="@field.Name" id="@field.Name" placeholder="@field.Placeholder" value="@field.Value" data-value="@field.AutoCompleteConfiguration.Items" data-url-auto-complete="@field.AutoCompleteConfiguration.UrlAutoComplete" data-ajax="@field.AutoCompleteConfiguration.IsAjax">
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Select:
+                                        <select name="@field.Name" data-placeholder="@field.Placeholder" class="input-block-level form-control @requiredClass">
+                                            @if (field.SelectListItems != null && field.SelectListItems.Count() > 0)
+                                            {
+                                                if (!string.IsNullOrWhiteSpace(field.Placeholder))
+                                                {
+                                                <option value="" disabled selected>@field.Placeholder</option>
+                                                }
+
+                                                foreach (var option in field.SelectListItems)
+                                                {
+                                                    if (option.Selected)
+                                                    { <option value="@option.Value" selected>@option.Text</option> }
+                                                    else
+                                                    { <option value="@option.Value">@option.Text</option>  }
+                                                }
+                                            }
+                                        </select>
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.RadioButton:
+                                            if (field.RadioButtonItems != null && field.RadioButtonItems.Count() > 0)
+                                            {
+                                                foreach (var radio in field.RadioButtonItems)
+                                                {
+                                        <label class="radio">
+                                            <input type="radio" name="@field.Name" value="@radio.Value" class="uniform">
+                                            @radio.Label
+                                        </label>
+                                                }
+                                            }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.CheckedBox:
+                                            if (field.CheckedBoxItems != null && field.CheckedBoxItems.Count() > 0)
+                                            {
+                                                foreach (var cb in field.CheckedBoxItems)
+                                                {
+                                        <label class="checkbox">
+                                            <div class="checker">
+                                                <input type="checkbox" name="@cb.Name" value="true" class="uniform">
+                                            </div>
+                                            @cb.Label
+                                        </label>
+                                                }
+                                            }
+                                            break;
+                                        case Centerhum.SmartFood.HtmlObjects.Enum.FieldType.TextArea:
+                                            if (field.TextAreaOptions.MaxLength > 0)
+                                            {
+                                        <textarea rows="3"cols="5" name="@field.Name" class="@requiredClass @field.AppendClass limited form-control" data-limit="@field.TextAreaOptions.MaxLength" maxlength="@field.TextAreaOptions.MaxLength">@field.Value</textarea>    
+                                            }
+                                            else
+                                            {
+                                        <textarea rows="3"cols="5" name="@field.Name" class="@requiredClass @field.AppendClass form-control">@field.Value</textarea>
+                                            }
+                                            if (field.TextAreaOptions.CreateAutoHelpText)
+                                            {
+                                        <span class="help-block" id="limit-text">Campo limitado com 250 caracteres.</span>    
+                                            }
+                                            break;
+                                        default:
+                                        <input type="text" class="form-control @requiredClass" name="@field.Name" placeholder="@field.Placeholder" value="@field.Value" />
+                                            if (!string.IsNullOrWhiteSpace(field.HelpText))
+                                            { <span class="help-block">@field.HelpText</span> }
+                                            break;
+                                    }
+                                </div>
+                            </div>
+                            }
+                        }
+                        @foreach (var field in Model.Fields.Where(x => x.Type == Centerhum.SmartFood.HtmlObjects.Enum.FieldType.Hidden).ToList())
+                        {
+                            <input type="hidden" value="@field.Value" class="@field.AppendClass" name="@field.Name" id="@field.Name" />
+                        }
+                        <div class="form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-7 col-md-5">
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-6">
+                                            <input type="reset" class="btn btn-block button-reset" value="Limpar" />
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="submit" class="btn btn-primary btn-block button-next">
+                                                @Model.SaveButtonLabel&nbsp;
+                                            <i class="icon-ok"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

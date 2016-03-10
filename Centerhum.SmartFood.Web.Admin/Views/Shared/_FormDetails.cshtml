@@ -1,0 +1,62 @@
+﻿@using System.Data
+@model Centerhum.SmartFood.HtmlObjects.FormDetail
+@{ ViewBag.Title = Model.Title; }
+<div id="form-insert" class="row">
+    <div class="col-md-12">
+        <div class="widget box">
+            <div class="widget-header">
+                <h4>
+                    <i class="icon-reorder"></i>@Model.Title</h4>
+            </div>
+            <div class="widget-content">
+                <form class="form-horizontal row-border">
+                    @foreach (var field in Model.HeaderColumn)
+                    {
+                        DataRow row = Model.DataSetValue.Tables[0].Rows[0];
+                        <div class="form-group">
+                            <label class="control-label col-md-3">
+                                @Html.Raw(field.Label)
+                            </label>
+                            <div class="col-md-9">
+                                <span>@Html.Raw(row[field.DataName])</span>
+                            </div>
+                        </div>
+                    }
+                    @if (Model.Sections != null && Model.Sections.Count > 0)
+                    {
+                        foreach (var currentSection in Model.Sections)
+                        {
+                        <div class="widget box">
+                            <div class="widget-header">
+                                <h4>
+                                    <i class="icon-reorder"></i>@currentSection.Title</h4>
+                                <div class="toolbar no-padding">
+                                    <div class="btn-group">
+                                        <span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content">
+                                @foreach (var field in currentSection.HeaderColumn)
+                                {
+                                    foreach (DataRow row in currentSection.DataSetValue.Tables[0].Rows)
+                                    {
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">
+                                            @Html.Raw(field.Label)
+                                        </label>
+                                        <div class="col-md-9">
+                                            <span>@Html.Raw(row[field.DataName])</span>
+                                        </div>
+                                    </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        }
+                    }
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

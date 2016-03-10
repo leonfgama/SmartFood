@@ -1,0 +1,18 @@
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.dll.config
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\obj\Debug\Centerhum.SmartFood.Model.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.Model\obj\Debug\Centerhum.SmartFood.Model.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.dll.config
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\Centerhum.SmartFood.Model.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\obj\Debug\Centerhum.SmartFood.Model.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.Model\obj\Debug\Centerhum.SmartFood.Model.pdb

@@ -1,0 +1,181 @@
+﻿@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSansSemiBold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/OpenSansBold.woff2) format('woff2');
+}
+
+.form-header .number
+{
+    background-color: #ececec;
+    border: 1px solid #d1d1d1;
+    color: #555;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.form-header .number-current
+{
+    background-color: #4d7496;
+    border-color: #3c5a74;    
+    color:#FFF;
+}
+
+.form-header .number-success
+{
+    background-color: #94b86e;
+    border-color: #7ba350;
+    color:#FFF;
+}
+
+
+.wizard-content
+{
+    margin-top:15px;
+    float:right;
+    background-color:#F5F5F5;
+    padding:10px;
+    padding-right:0;
+}
+
+.form-header .number:hover
+{
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.divider 
+{
+    width: 100%;
+    height:1px;
+    background: #eee;
+}
+
+.divider-margin
+{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.divider-margin-top
+{
+    margin-top:30px;
+}
+
+.divider-margin-bottom
+{
+    margin-bottom:30px;
+}
+
+.cbSelect:hover
+{
+    cursor:pointer;
+}
+
+.DTTT_container, .remove-button-table
+{
+    float:right;
+    margin-left:10px;
+}
+
+.widget-header h4:hover
+{
+    cursor:pointer;
+    text-decoration:underline;    
+}
+
+.text-align-center
+{
+    text-align:center;
+}
+
+.hidden-element
+{
+    display:none;
+}
+
+.jsonOutput
+{
+    font-family:Consolas !important;
+}
+
+.grid-icon-detail-error
+{
+    color: #ebccd1;
+    color: #a94442;
+}
+
+.left-border
+{
+    border-left:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+    height:100%;
+}
+
+.date-universal
+{
+    width:250px;
+    height:48px;
+    border:none;
+    background:#4d7496 !important;
+    color:#FFF !important;
+    font-weight:700 !important;
+    text-align:center !important;
+    font-size:14px !important;
+}
+
+.date-universal:focus
+{
+    background:#334D63 !important;
+}
+
+.bg-danger
+{
+    background-color:#e25856;
+}
+
+.bg-success
+{
+    background-color:#94b86e;
+}
+
+.bg-warning
+{
+    background-color:#f0ad4e;
+}
+
+.bg-primary
+{
+    background-color:#658db3;
+}
+
+.font-consolas
+{
+    font-family:Consolas;
+}
+
+.username
+{
+    color:#FFF !important;
+    font-weight:700 !important;
+    text-align:center !important;
+    font-size:14px !important;
+}

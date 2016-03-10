@@ -1,0 +1,17 @@
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Centerhum.SmartFood.Api.Client.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Centerhum.SmartFood.Api.Client.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Centerhum.SmartFood.Model.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.SelfHost.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Centerhum.SmartFood.Model.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.SelfHost.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\bin\Debug\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\obj\Debug\Centerhum.SmartFood.Api.Client.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\obj\Debug\Centerhum.SmartFood.Api.Client.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Api.Client\obj\Debug\Centerhum.SmartFood.Api.Client.pdb

@@ -1,0 +1,233 @@
+﻿@using Centerhum.SmartFood.HtmlObjects.Enum
+@using System.Data
+@using Centerhum.SmartFood.HtmlObjects
+@model Centerhum.SmartFood.HtmlObjects.Grid
+@if (Model == null)
+{
+    Html.RenderPartial("_EmptyGrid");
+    return;
+}
+@{
+    HeaderColumn[] headers = Model.HeaderColumns.OrderBy(x => x.Order).ToArray();
+    
+}
+
+<input type="hidden" value="@Model.UrlDeleteSelecteds" id="UrlDeleteSelecteds" />
+<div class="col-md-12">
+    <div class="widget box">
+        <div class="widget-header">
+            <h4 id="header-result">
+                <i class="icon-reorder"></i>@Model.Title</h4>
+            <div class="toolbar no-padding" style="display: none;">
+                <div class="btn-group">
+                    <span class="btn btn-xs widget-collapse" id="btn-widget-collapse-result"><i class="icon-angle-down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="widget-content no-padding">
+            <table class="table table-bordered table-hover table-checkable table-striped table-highlight-head table-tabletools datatable"
+                id="table-grid">
+                <thead>
+                    <tr>
+                        <th>#
+                        </th>
+                        @foreach (var columnHeader in headers)
+                        {
+                            <th class="@columnHeader.AppendHeaderClass" data-name="@columnHeader.DataName">
+                                @columnHeader.Label
+                            </th>
+                        }
+                        @if (Model.Options != null && (Model.Options.CreateDetailButton || Model.Options.CreateUpdateButton || Model.Options.CreateDeleteButton || (Model.Options.GridButtons != null)))
+                        {
+                            <th class="align-center">Opções
+                            </th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ string dataNamePk = Model.HeaderColumns.FirstOrDefault(x => x.IsPrimaryKey == true).DataName; }
+                    @{ string pkValue = ""; }
+                    @if (Model.DataSetValue != null && Model.DataSetValue.Tables.Count > 0)
+                    {
+                        foreach (DataRow row in Model.DataSetValue.Tables[0].Rows)
+                        {
+                            pkValue = Convert.ToString(row[dataNamePk]);
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="uniform cbSelect" name="Selected" value="@pkValue" />
+                            </td>
+                            @foreach (var columnHeader in headers)
+                            {
+                                switch (columnHeader.ColumnType)
+                                {
+                                    case ColumnType.Text:
+                                        string returnTextValue = Convert.ToString(row[columnHeader.DataName]);
+                                        if (columnHeader.IsPrimaryKey)
+                                        {
+                                <td data-primary-key="true" data-value="@returnTextValue" class="@columnHeader.AppendValueClass">@Html.Raw(returnTextValue)
+                                </td>
+                                        }
+                                        else
+                                        {
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(returnTextValue)
+                                </td>
+                                        }
+                                        break;
+                                    case ColumnType.Int:
+                                        int intValue = Convert.ToInt32(row[columnHeader.DataName]);
+                                        if (columnHeader.LabelsForInt != null && columnHeader.LabelsForInt.Count() > 0)
+                                        {
+                                            var objLabel = columnHeader.LabelsForInt.FirstOrDefault(x => x.Key == intValue);
+                                            if (objLabel != null && objLabel.Value != null)
+                                            {
+                                <td>@Html.Raw(objLabel.Value)
+                                </td>
+                                            }
+                                            else
+                                            {
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(Convert.ToString(row[columnHeader.DataName]))
+                                </td>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (columnHeader.IsPrimaryKey)
+                                            {
+                                <td data-primary-key="true" data-value="@intValue" class="@columnHeader.AppendValueClass">@Html.Raw(intValue)
+                                </td>
+                                            }
+                                            else
+                                            {
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(intValue)
+                                </td>
+                                            }
+                                        }
+                                        break;
+                                    case ColumnType.Date:
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(Convert.ToString(row[columnHeader.DataName]))
+                                </td>
+                                        break;
+                                    case ColumnType.Bool:
+                                        bool boolValue = Convert.ToBoolean(row[columnHeader.DataName]);
+                                        string strValue = "";
+                                        if (!string.IsNullOrWhiteSpace(columnHeader.LabelIfTrue) && !string.IsNullOrWhiteSpace(columnHeader.LabelIfFalse))
+                                        {
+                                            strValue = boolValue ? columnHeader.LabelIfTrue : columnHeader.LabelIfFalse;
+                                        }
+                                        else
+                                        {
+                                            strValue = Convert.ToString(boolValue);
+                                        }
+                                    
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(strValue)
+                                </td>
+                                        break;
+                                    case ColumnType.Decimal:
+                                        decimal returnDecimalValue = Convert.ToDecimal(row[columnHeader.DataName]);
+                                        if (columnHeader.IsPrimaryKey)
+                                        {
+                                <td data-primary-key="true" data-value="@returnDecimalValue" class="@columnHeader.AppendValueClass">@Html.Raw(returnDecimalValue)
+                                </td>
+                                        }
+                                        else
+                                        {
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(returnDecimalValue)
+                                </td>
+                                        }
+                                        break;
+                                    default:
+                                        string returnDefaultValue = Convert.ToString(row[columnHeader.DataName]);
+                                        if (columnHeader.IsPrimaryKey)
+                                        {
+                                <td data-primary-key="true" data-value="@returnDefaultValue" class="@columnHeader.AppendValueClass">@Html.Raw(returnDefaultValue)
+                                </td>
+                                        }
+                                        else
+                                        {
+                                <td class="@columnHeader.AppendValueClass">@Html.Raw(returnDefaultValue)
+                                </td>
+                                        }
+                                        break;
+                                }
+                            }
+                            @if (Model.Options != null && (Model.Options.CreateDetailButton || Model.Options.CreateUpdateButton || Model.Options.CreateDeleteButton || (Model.Options.GridButtons != null)))
+                            {
+                                <td class="align-center">
+                                    <span class="btn-group">
+                                        @if (Model.Options.CreateDetailButton)
+                                        {
+                                            if (Model.DataSetValue.Tables[0].Columns.Contains("ind_detail"))
+                                            {
+                                                if (row["ind_detail"] != DBNull.Value && Convert.ToBoolean(row["ind_detail"]))
+                                                {
+                                            <a href="@Url.Action(Model.Options.ActionNameDetail, new { @Id = pkValue })"  class="btn btn-xs bs-tooltip" data-original-title="Detalhe">
+                                                <i class="icon-search"></i></a>
+                                                }
+                                            }
+                                            else
+                                            {
+                                            <a href="@Url.Action(Model.Options.ActionNameDetail, new { @Id = pkValue })"  class="btn btn-xs bs-tooltip" data-original-title="Detalhe">
+                                                <i class="icon-search"></i></a>   
+                                            }
+                                        }
+                                        @if (Model.Options.CreateUpdateButton)
+                                        {
+                                            <a href="@Url.Action(Model.Options.ActionNameUpdate, new { @Id = pkValue })"  class="btn btn-xs bs-tooltip" data-original-title="Editar">
+                                                <i class="icon-pencil"></i></a>
+                                        }
+                                        @if (Model.Options.CreateDeleteButton)
+                                        {
+                                            <a class="btn btn-xs bs-tooltip btnDel" data-original-title="Excluir" data-url="@Url.Action(Model.Options.ActionNameDelete)" data-value="@pkValue">
+                                                <i class="icon-trash"></i></a>
+                                        }
+                                        @if (Model.Options.GridButtons != null && Model.Options.GridButtons.Count > 0)
+                                        {
+                                            foreach (var button in Model.Options.GridButtons)
+                                            {
+                                                if (!string.IsNullOrEmpty(button.DataColumnShow))
+                                                {
+                                                    if (Model.DataSetValue.Tables[0].Columns.Contains(button.DataColumnShow))
+                                                    {
+                                                        if (Convert.ToBoolean(row[button.DataColumnShow]))
+                                                        {
+                                                            if (button.ConfirmModal)
+                                                            {
+                                            <a class="btn btn-xs bs-tooltip btnCustomConfirm @button.AppendClass" data-original-title="@button.ToolTipText" data-message-confirm="@button.MessageConfirmModal" data-url="@Url.Action(button.UrlAction)" data-value="@pkValue">
+                                                <i class="@button.Icon"></i></a>        
+                                                            }
+                                                            else
+                                                            {
+                                            <a href="@Url.Action(button.UrlAction, new { @Id = pkValue })"   class="btn btn-xs bs-tooltip @button.AppendClass" data-original-title="@button.ToolTipText">
+                                                <i class="@button.Icon"></i></a>
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (button.ConfirmModal)
+                                                    {
+                                            <a class="btn btn-xs bs-tooltip btnCustomConfirm @button.AppendClass" data-original-title="@button.ToolTipText" data-message-confirm="@button.MessageConfirmModal" data-url="@Url.Action(button.UrlAction)" data-value="@pkValue">
+                                                <i class="@button.Icon"></i></a>        
+                                                    }
+                                                    else
+                                                    {
+                                            <a href="@Url.Action(button.UrlAction, new { @Id = pkValue })"   class="btn btn-xs bs-tooltip @button.AppendClass" data-original-title="@button.ToolTipText">
+                                                <i class="@button.Icon"></i></a>
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    </span>
+                                </td>
+                            }
+                        </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Up Widget Box-->
+</div>
+<!-- Up col-md-12 -->

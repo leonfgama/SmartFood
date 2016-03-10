@@ -1,0 +1,4 @@
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.HtmlObjects\bin\Debug\Centerhum.SmartFood.HtmlObjects.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.HtmlObjects\bin\Debug\Centerhum.SmartFood.HtmlObjects.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.HtmlObjects\obj\Debug\Centerhum.SmartFood.HtmlObjects.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.HtmlObjects\obj\Debug\Centerhum.SmartFood.HtmlObjects.pdb

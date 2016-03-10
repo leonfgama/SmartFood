@@ -1,0 +1,80 @@
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.dll.config
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Antlr3.Runtime.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataLayer.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Model.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Newtonsoft.Json.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Net.Http.Formatting.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Helpers.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.WebHost.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Mvc.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Optimization.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Razor.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Razor.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\WebGrease.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataAccess.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\EntityFramework.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataLayer.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Model.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Newtonsoft.Json.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Net.Http.Formatting.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Helpers.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.WebHost.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Mvc.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Optimization.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Razor.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Razor.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Antlr3.Runtime.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataAccess.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\EntityFramework.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.csprojResolveAssemblyReference.cache
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.dll.config
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Web.Api.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Antlr3.Runtime.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataLayer.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Model.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Helpers.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Mvc.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Optimization.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Razor.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\WebGrease.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataAccess.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\EntityFramework.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataLayer.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.Model.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Helpers.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Mvc.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Optimization.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.Razor.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Antlr3.Runtime.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\Centerhum.SmartFood.DataAccess.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\bin\EntityFramework.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.SmartFood.Web.Api\obj\Debug\Centerhum.SmartFood.Web.Api.csprojResolveAssemblyReference.cache

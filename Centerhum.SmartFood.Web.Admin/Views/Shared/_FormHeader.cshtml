@@ -1,0 +1,27 @@
+﻿@model Centerhum.SmartFood.HtmlObjects.FormHeader
+<div class="form-header">
+    <div class="row page-header">
+        <div class="col-md-6 page-title">
+            <h3>@Model.Title</h3>
+            <span>@Model.SubTitle</span>
+        </div>
+        <div class="col-md-6">
+            @if (Model.HasWizard && Model.Wizard != null)
+            {
+                <div class="wizard-content">
+                    @foreach (var item in Model.Wizard)
+                    {
+                        string _strCurrent = item.IsCurrent ? "number-current" : string.Empty;
+                        string _strSuccess = item.HasSuccess ? "number-success" : string.Empty;
+                        <a href="@item.Url" class="number bs-tooltip @_strCurrent @_strSuccess" data-placement="top" data-original-title="@item.Description">@item.Index</a>
+                    }
+                </div>   
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="divider divider-margin-bottom"></div>
+        </div>
+    </div>
+</div>

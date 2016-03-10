@@ -1,0 +1,43 @@
+﻿<div id="sidebar" class="sidebar-fixed">
+    <div id="sidebar-content">
+        @*	<!-- Search Input -->
+		<form class="sidebar-search">
+			<div class="input-box">
+				<button type="submit" class="submit">
+					<i class="icon-search"></i>
+				</button>
+				<span>
+					<input type="text" placeholder="Pesquisar...">
+				</span>
+			</div>
+		</form>*@
+        <!--=== Navigation ===-->
+        <ul id="nav">
+            <li class="">
+                <a href="@Url.Action("Index", "Home")"><i class="icon-bar-chart"></i>Resumo</a>
+            </li>   
+            <li class="current open">
+                <a href="javascript:void(0);">
+                    <i class="icon-desktop"></i>Adicionar Mesa
+                </a>
+                <ul class="sub-menu">                    
+                    <li><a href="javascript:void(0);" class="subMenuClickEvent"><i class="icon-globe"></i>Item 2 <span class="arrow"></span><i class="arrow icon-angle-down"></i></a>
+                        <ul class="sub-menu" style="display: block;">
+                            <li><a href="javascript:void(0);"><i class="icon-user"></i>Sample Link 1</a></li>
+                            <li><a href="javascript:void(0);"><i class="icon-external-link"></i>Sample Link 1</a></li>
+                            <li><a href="javascript:void(0);"><i class="icon-bell"></i>Sample Link 1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="@Url.Action("Insert", "Document")"><i class="icon-angle-right"></i>Novo </a></li>
+                    <li><a href="@Url.Action("History", "Document")""><i class="icon-angle-right"></i>Histórico </a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="@Url.Action("Index", "Operation")"><i class="icon-file-text-alt"></i>Operação</a>
+            </li>
+        </ul>
+    </div>
+    <div id="divider" class="resizeable">
+    </div>
+</div>
+<!-- /Sidebar -->

@@ -1,0 +1,28 @@
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.dll.config
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataAccess.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.Model.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataAccess.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.Model.pdb
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.dll
+C:\Users\Leon\Documents\Visual Studio 2013\Projects\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.dll.config
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataLayer.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataAccess.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.Model.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.DataAccess.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\Centerhum.SmartFood.Model.pdb
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.dll
+C:\inetpub\wwwroot\Centerhum.SmartFood\Centerhum.Smartfood.DataLayer\obj\Debug\Centerhum.SmartFood.DataLayer.pdb
