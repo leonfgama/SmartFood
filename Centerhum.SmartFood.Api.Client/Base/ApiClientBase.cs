@@ -14,6 +14,7 @@ namespace Centerhum.SmartFood.Api.Client.Base
 {
     public abstract class ApiClientBase
     {
+    	
         private string _apiUrlBase;
         public string ApiUrlBase
         {
